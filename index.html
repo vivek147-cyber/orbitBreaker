@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbit Breaker — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Orbit Breaker, a free mobile game by Rosnil Technology Private Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F7FB;
+    --card:#FFFFFF;
+    --ink:#141928;
+    --ink-soft:#535C72;
+    --line:#DFE3EC;
+    --space-900:#080B14;
+    --space-700:#131C30;
+    --space-500:#22345A;
+    --trail:#54E9C9;
+    --trail-deep:#0E8A76;
+    --flare:#FFB454;
+    --flare-deep:#B96A00;
+    --radius:14px;
+    --maxw:1100px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Space Grotesk', sans-serif;
+    color:var(--ink);
+    line-height:1.15;
+    margin:0 0 .5em;
+  }
+  a{color:var(--trail-deep);}
+  a:hover{color:var(--flare-deep);}
+  p{margin:0 0 1em;}
+  ul{margin:0 0 1em; padding-left:1.2em;}
+  li{margin-bottom:.4em;}
+  :focus-visible{outline:2px solid var(--trail-deep); outline-offset:3px;}
+
+  .skip-link{
+    position:absolute; left:-999px; top:auto;
+    background:var(--ink); color:#fff; padding:.6em 1em; border-radius:8px; z-index:100;
+  }
+  .skip-link:focus{ left:1em; top:1em; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse at 30% 15%, rgba(84,233,201,0.10), transparent 55%),
+      linear-gradient(160deg, var(--space-900), var(--space-700) 55%, var(--space-500));
+    color:#fff;
+    padding: 3.2rem 1.5rem 2.4rem;
+  }
+  .hero-inner{ max-width:var(--maxw); margin:0 auto; text-align:center; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.78rem;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--trail);
+    margin-bottom:.9rem;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 5vw, 3.3rem);
+    letter-spacing:-.01em;
+    margin-bottom:.5rem;
+  }
+  .hero-sub{
+    max-width:560px; margin:0 auto 0;
+    color:rgba(255,255,255,.72);
+    font-size:1.05rem;
+  }
+
+  /* ---------- QUICK FACTS ---------- */
+  .quickfacts{
+    max-width:var(--maxw); margin:-2.2rem auto 0; padding:0 1.5rem 2.2rem;
+    display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem;
+    position:relative; z-index:2;
+  }
+  @media (min-width:800px){ .quickfacts{ grid-template-columns:repeat(4,1fr); } }
+  .fact{
+    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--trail-deep);
+    border-radius:10px; padding:.9rem 1rem;
+    box-shadow:0 1px 2px rgba(20,25,40,.04);
+  }
+  .fact h3{ font-size:.92rem; margin-bottom:.25rem; }
+  .fact p{ font-size:.82rem; color:var(--ink-soft); margin:0; }
+
+  /* ---------- LAYOUT ---------- */
+  .layout{
+    max-width:var(--maxw); margin:0 auto; padding:1.5rem 1.5rem 4rem;
+    display:grid; grid-template-columns:1fr; gap:2rem;
+  }
+  @media (min-width:900px){
+    .layout{ grid-template-columns:230px 1fr; gap:3.2rem; align-items:start; }
+  }
+
+  .toc{ border:1px solid var(--line); border-radius:12px; background:var(--card); }
+  .toc summary{
+    cursor:pointer; padding:.9rem 1.1rem; font-family:'Space Grotesk',sans-serif; font-weight:600;
+    list-style:none;
+  }
+  .toc summary::-webkit-details-marker{ display:none; }
+  .toc summary::after{ content:'+'; float:right; color:var(--ink-soft); }
+  .toc[open] summary::after{ content:'–'; }
+  .toc nav{ padding:0 .5rem 1rem; display:flex; flex-direction:column; }
+  .toc nav a{
+    display:block; padding:.4rem .6rem; border-radius:8px;
+    color:var(--ink-soft); text-decoration:none; font-size:.88rem;
+  }
+  .toc nav a:hover{ background:var(--paper); color:var(--ink); }
+  @media (min-width:900px){
+    .toc{ position:sticky; top:1.5rem; }
+    .toc summary{ display:none; }
+    .toc nav{ display:flex !important; padding-top:1rem; }
+  }
+
+  main section{ scroll-margin-top:1.5rem; padding-bottom:2.2rem; margin-bottom:2.2rem; border-bottom:1px solid var(--line); }
+  main section:last-child{ border-bottom:none; margin-bottom:0; }
+  .sec-num{
+    font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--trail-deep);
+    letter-spacing:.06em; margin-bottom:.35rem;
+  }
+  main h2{ font-size:1.5rem; }
+  main h3{ font-size:1.05rem; margin-top:1.2rem; }
+  main p, main li{ color:var(--ink); }
+
+  .callout{
+    background:linear-gradient(180deg, rgba(84,233,201,.10), rgba(84,233,201,.04));
+    border:1px solid rgba(14,138,118,.25); border-left:3px solid var(--trail-deep);
+    border-radius:10px; padding:1rem 1.2rem; margin:1rem 0;
+  }
+  .callout p:last-child{ margin-bottom:0; }
+
+  .data-table-wrap{ overflow-x:auto; border:1px solid var(--line); border-radius:12px; margin:1rem 0; }
+  table{ width:100%; border-collapse:collapse; min-width:640px; background:var(--card); }
+  thead th{
+    font-family:'IBM Plex Mono',monospace; font-size:.76rem; text-transform:uppercase; letter-spacing:.04em;
+    text-align:left; color:var(--ink-soft); background:var(--paper);
+    padding:.7rem .9rem; border-bottom:1px solid var(--line);
+  }
+  tbody td{ padding:.8rem .9rem; border-bottom:1px solid var(--line); font-size:.9rem; vertical-align:top; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody td:first-child{ font-weight:600; white-space:nowrap; }
+
+  .badge{
+    display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:.72rem;
+    padding:.15rem .5rem; border-radius:999px; margin-left:.4rem;
+  }
+  .badge-off{ background:rgba(255,180,84,.18); color:var(--flare-deep); }
+
+  /* ---------- FOOTER ---------- */
+  .site-footer{
+    background:var(--space-900); color:rgba(255,255,255,.65);
+    padding:2.4rem 1.5rem; font-size:.88rem;
+  }
+  .footer-inner{ max-width:var(--maxw); margin:0 auto; display:flex; flex-wrap:wrap; gap:2rem; justify-content:space-between; }
+  .footer-inner h3{ color:#fff; font-size:1rem; margin-bottom:.5rem; }
+  .footer-inner a{ color:var(--trail); }
+  .footer-block p{ margin:0 0 .3rem; }
+
+  @media print{
+    .hero{ background:#fff; color:#000; }
+    .quickfacts, .toc{ display:none; }
+    .hero-sub, .eyebrow{ color:#000; }
+    a{ color:#000; text-decoration:underline; }
+    main section{ border-bottom:1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to policy content</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Privacy Policy · Last updated August 7, 2026</p>
+    <h1>Orbit Breaker</h1>
+    <p class="hero-sub">A plain picture of what leaves your device when you play, and exactly where it goes. No accounts, no logins — just an app, a couple of Google services, and the game itself.</p>
+  </div>
+</header>
+
+<section class="quickfacts" aria-label="Quick summary">
+  <div class="fact">
+    <h3>No accounts, ever</h3>
+    <p>There's nothing to sign into. You tap Play and you're in.</p>
+  </div>
+  <div class="fact">
+    <h3>We don't store your data</h3>
+    <p>No backend, no database run by us — there's no profile to keep.</p>
+  </div>
+  <div class="fact">
+    <h3>You control ad tracking</h3>
+    <p>Decline ATT on iOS or reset your Ad ID on Android, any time.</p>
+  </div>
+  <div class="fact">
+    <h3>Not aimed at kids</h3>
+    <p>Orbit Breaker is tagged non-child-directed and isn't for under-13s.</p>
+  </div>
+</section>
+
+<div class="layout">
+  <details class="toc" open>
+    <summary>Contents</summary>
+    <nav aria-label="Table of contents">
+      <a href="#overview">§1&nbsp; Overview</a>
+      <a href="#no-signin">§2&nbsp; No accounts or sign-in</a>
+      <a href="#data-we-collect">§3&nbsp; Information we collect</a>
+      <a href="#permissions">§4&nbsp; App permissions</a>
+      <a href="#tracking">§5&nbsp; Ad identifiers &amp; tracking</a>
+      <a href="#how-we-use">§6&nbsp; How we use information</a>
+      <a href="#sharing">§7&nbsp; How information is shared</a>
+      <a href="#choices">§8&nbsp; Your choices &amp; rights</a>
+      <a href="#children">§9&nbsp; Children's privacy</a>
+      <a href="#retention">§10&nbsp; Retention &amp; deletion</a>
+      <a href="#third-parties">§11&nbsp; Third-party services</a>
+      <a href="#security">§12&nbsp; Data security</a>
+      <a href="#changes">§13&nbsp; Changes to this policy</a>
+      <a href="#contact">§14&nbsp; Contact us</a>
+    </nav>
+  </details>
+
+  <main id="main">
+
+    <section id="overview">
+      <p class="sec-num">§1</p>
+      <h2>Overview</h2>
+      <p>This Privacy Policy explains how <strong>Rosnil Technology Private Limited</strong> ("Rosnil Technology," "we," "us," or "our") handles information in connection with <strong>Orbit Breaker</strong> (the "App"), a free mobile game available for Android and iOS under the package/bundle identifier <code>com.apelabs.orbitbreaker</code> on both platforms.</p>
+      <p>Orbit Breaker is a native app shell — a splash screen and home screen — that loads the actual game inside an in-app browser window (a WebView) when you tap Play. The App has no user accounts, no sign-in, no chat or messaging, and no user-generated content. It's built for a general audience and isn't directed at children. There are currently no in-app purchases or subscriptions.</p>
+      <p>By using the App, you agree to the practices described here. If you don't agree, please don't use the App.</p>
+    </section>
+
+    <section id="no-signin">
+      <p class="sec-num">§2</p>
+      <h2>No accounts or sign-in</h2>
+      <div class="callout">
+        <p>Orbit Breaker never asks you to create an account, log in, or hand over a username, password, or profile. There's no personal identity attached to your use of the App, and we don't operate a backend server or database that stores who you are.</p>
+        <p>Everything described in the rest of this policy is collected automatically by the third-party analytics and advertising services listed below — not by us directly — and none of it is linked to an account, because no account exists.</p>
+      </div>
+    </section>
+
+    <section id="data-we-collect">
+      <p class="sec-num">§3</p>
+      <h2>Information we collect</h2>
+      <p>We don't collect information ourselves through any servers we run. Instead, the services embedded in the App collect the following on our behalf:</p>
+
+      <h3>3.1 Usage &amp; performance data — Firebase Analytics (Google)</h3>
+      <p>Firebase Analytics automatically collects app opens, session duration, screens viewed, general device and OS information, and an approximate location at country/region level, derived from your IP address rather than GPS. We don't currently use Firebase Crashlytics, so crash data isn't being collected. We also log two custom events: <code>game_started</code>, when a game session begins, and <code>rewarded_ad_shown</code>, when a rewarded ad is displayed. This is used to understand engagement and app performance, and isn't tied to any user identity.</p>
+
+      <h3>3.2 Advertising data — Google AdMob</h3>
+      <p>Orbit Breaker is supported by ads served through AdMob: banner ads, app-open ads shown on launch or resume, rewarded ads you opt into for an in-game benefit, and rewarded interstitial ads that play automatically during gameplay. To deliver, measure, and frequency-cap these ads, AdMob collects your advertising identifier (Android Advertising ID, or Apple's IDFA once you've allowed tracking), general device information, and ad interaction data. Where you've consented, this may also be used for personalized advertising.</p>
+
+      <h3>3.3 Unity Ads <span class="badge badge-off">not currently active</span></h3>
+      <p>AdMob supports mediation, letting multiple ad networks compete to serve ads. Unity Ads is configured as a potential mediation partner but isn't currently serving ads in the App. If we switch it on in the future, it would collect the same categories of data as AdMob — advertising identifiers and device information — for the same ad-serving purposes.</p>
+
+      <h3>3.4 Consent &amp; region data — Google User Messaging Platform (UMP)</h3>
+      <p>We use Google's UMP to determine your approximate region and to collect and store your consent choices for personalized advertising, in line with the EU/UK GDPR and US state privacy laws such as the CCPA/CPRA. UMP collects only what it needs to make that determination and remember your choice.</p>
+
+      <h3>3.5 The game itself — third-party web content</h3>
+      <p>When you tap Play, the App loads the actual game from an external website, <strong>idlgames.gamer.gd</strong>, inside the in-app WebView. That site is operated independently of Rosnil Technology and may set its own cookies or collect data under its own practices. We don't control, inspect, or receive that site's data, and this policy doesn't cover it — see §11 for more.</p>
+
+      <div class="data-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Source</th><th>What it collects</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Firebase Analytics</td>
+              <td>App opens, session length, screens viewed, device/OS info, approximate country/region, <code>game_started</code> &amp; <code>rewarded_ad_shown</code> events</td>
+              <td>Understand engagement and app performance</td>
+            </tr>
+            <tr>
+              <td>Google AdMob</td>
+              <td>Advertising ID (AAID / IDFA), device info, ad interaction data</td>
+              <td>Serve, measure, and cap ads; personalize where consented</td>
+            </tr>
+            <tr>
+              <td>Unity Ads</td>
+              <td>Would collect advertising ID &amp; device info, once activated</td>
+              <td>Backup mediation partner for ad serving — inactive today</td>
+            </tr>
+            <tr>
+              <td>Google UMP</td>
+              <td>Approximate region, consent choices</td>
+              <td>Apply the correct privacy rules and remember your choice</td>
+            </tr>
+            <tr>
+              <td>idlgames.gamer.gd</td>
+              <td>Governed entirely by that site's own practices</td>
+              <td>Delivers the actual game inside the WebView</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="permissions">
+      <p class="sec-num">§4</p>
+      <h2>App permissions</h2>
+      <p>On Android, Orbit Breaker requests a single permission: <strong>internet access</strong>, needed to load the game and to serve ads and analytics. The App does not request your camera, microphone, contacts, photos or storage, precise location, or any other sensitive device permission.</p>
+    </section>
+
+    <section id="tracking">
+      <p class="sec-num">§5</p>
+      <h2>Advertising identifiers &amp; tracking</h2>
+      <p><strong>iOS:</strong> Before any tracking-related ad personalization happens, we ask for App Tracking Transparency (ATT) permission through Apple's system prompt. You can decline — the App still works normally, you'll just see non-personalized ads.</p>
+      <p><strong>Android:</strong> Ads use the Google Advertising ID (AAID), a resettable identifier you control from your device settings. You can reset it or opt out of interest-based ads there at any time.</p>
+    </section>
+
+    <section id="how-we-use">
+      <p class="sec-num">§6</p>
+      <h2>How we use information</h2>
+      <ul>
+        <li>Measure app usage and engagement, including the <code>game_started</code> and <code>rewarded_ad_shown</code> events and overall session activity</li>
+        <li>Diagnose and improve app performance</li>
+        <li>Serve and measure banner, app-open, rewarded, and rewarded interstitial ads</li>
+        <li>Personalize ads where you've given consent</li>
+        <li>Cap how often you see the same ad</li>
+        <li>Determine which regional privacy rules apply to you</li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <p class="sec-num">§7</p>
+      <h2>How information is shared</h2>
+      <p>The information in §3 is processed by:</p>
+      <ul>
+        <li><strong>Google</strong>, for Firebase Analytics, AdMob, and the User Messaging Platform</li>
+        <li><strong>Unity Technologies</strong>, for Unity Ads, only once that mediation partner is activated</li>
+      </ul>
+      <p>Each processes data under its own privacy policy, in addition to acting on our instructions. We don't sell your information, and we don't share it for anything outside the ad-serving and analytics purposes described in this policy.</p>
+      <p>Reference: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from partner sites</a> · <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></p>
+    </section>
+
+    <section id="choices">
+      <p class="sec-num">§8</p>
+      <h2>Your choices &amp; rights</h2>
+      <h3>Ad personalization consent</h3>
+      <p>Manage or withdraw your consent at any time through the in-app consent prompt (powered by Google's UMP), or through the device-level controls below.</p>
+      <h3>iOS tracking</h3>
+      <p>Change your App Tracking Transparency choice any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+      <h3>Android advertising ID</h3>
+      <p>Reset or opt out of interest-based ads under <em>Settings → Privacy → Ads</em> on your device (the exact path varies by Android version).</p>
+      <h3>Regional privacy rights</h3>
+      <p>Depending on where you live — including the EEA, UK, and US states with laws like the CCPA/CPRA — you may have rights such as knowing what categories of information are processed, and opting out of the "sale" or "sharing" of personal information for targeted advertising. Because Orbit Breaker has no accounts and we hold no separate database of your information, these choices are exercised through the consent and device controls above, or directly with Google via <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+    </section>
+
+    <section id="children">
+      <p class="sec-num">§9</p>
+      <h2>Children's privacy</h2>
+      <p>Orbit Breaker is intended for a general audience and is not directed at children under 13. We tag ad requests for the App as non-child-directed with Google, in line with COPPA. If you believe a child has provided information through the App despite these measures, contact us using the details in §14 and we'll take appropriate steps.</p>
+    </section>
+
+    <section id="retention">
+      <p class="sec-num">§10</p>
+      <h2>Retention &amp; deletion</h2>
+      <p>We don't run a separate backend server or database for Orbit Breaker, so we don't hold a store of your information ourselves. What's collected is retained according to Google's and Unity's own standard schedules, described in the policies linked in §7 and §11. Because the App has no accounts, there's no personal profile for us to delete on request — to manage or clear information tied to your device or advertising identifier, use the controls in §5 and §8.</p>
+    </section>
+
+    <section id="third-parties">
+      <p class="sec-num">§11</p>
+      <h2>Third-party services</h2>
+      <ul>
+        <li><strong>Firebase</strong> (Google) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+        <li><strong>AdMob &amp; UMP</strong> (Google) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li><strong>Unity Ads</strong> (Unity Technologies) — <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></li>
+        <li><strong>idlgames.gamer.gd</strong> — the site that delivers the actual game; independent of Rosnil Technology and outside our control</li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <p class="sec-num">§12</p>
+      <h2>Data security</h2>
+      <p>Since Rosnil Technology doesn't operate its own servers or database for Orbit Breaker, we rely on the security safeguards built into Google's and Unity's infrastructure for the services described here. No method of transmission or storage is completely secure, and we can't guarantee absolute security — but we also don't collect anything beyond what these services need to function.</p>
+    </section>
+
+    <section id="changes">
+      <p class="sec-num">§13</p>
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy, for example if we add in-app purchases, activate Unity Ads mediation, or add crash reporting. We'll update the "Last updated" date at the top of this page whenever we do, and take reasonable steps to flag significant changes within the App.</p>
+    </section>
+
+    <section id="contact">
+      <p class="sec-num">§14</p>
+      <h2>Contact us</h2>
+      <p>Questions about this policy or how Orbit Breaker handles information can be sent to:</p>
+      <p>
+        <strong>Rosnil Technology Private Limited</strong><br>
+        Mumbai, Maharashtra, India<br>
+        Email: <a href="mailto:Rosnil@apeitnow.com">Rosnil@apeitnow.com</a><br>
+        Tel: <a href="tel:+912246089997">+91-22-46089997</a>
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-block">
+      <h3>Orbit Breaker</h3>
+      <p>A free mobile game for Android &amp; iOS.</p>
+      <p>com.apelabs.orbitbreaker</p>
+    </div>
+    <div class="footer-block">
+      <h3>Developer</h3>
+      <p>Rosnil Technology Private Limited</p>
+      <p>Mumbai, Maharashtra, India</p>
+    </div>
+    <div class="footer-block">
+      <h3>Contact</h3>
+      <p><a href="mailto:Rosnil@apeitnow.com">Rosnil@apeitnow.com</a></p>
+      <p><a href="tel:+912246089997">+91-22-46089997</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
